@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Snake</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div>
+            <canvas></canvas>
+            <h2 id="score">Highest Score: 1</h2>
+        </div>
+        <div class="sep">
+            <div style="margin-bottom: 50px">
+                <button id="autoBtn" onclick="onAuto()">
+                    <b>Eulerian Cycle</b>
+                </button>
+                <p class="text">(for 4x4 and 6x6 only)</p>
+            </div>
+            <div>
+                <p class="text">Speed</p>
+                <input type="range" min="5" max="20" value="5" id="velSlider" />
+            </div>
+            <output id="velOutput">5</output>
+            <div>
+                <p class="text">Grid Size</p>
+                <input
+                    type="range"
+                    min="4"
+                    max="20"
+                    value="4"
+                    id="gridSlider"
+                />
+            </div>
+            <output id="gridSliderOutput">4</output>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
